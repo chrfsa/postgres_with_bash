@@ -21,6 +21,7 @@ Ce projet contient des scripts Bash pour insérer des données à partir de fich
     ```bash
     git clone https://github.com/chrfsa/postgres_with_bash.git
     cd postgres_with_bash
+    cd students_database
     ```
 
 2. Créez la base de données et les tables nécessaires :
@@ -78,8 +79,7 @@ Pour récupérer des informations de la base de données students, exécutez le 
 ```bash
 ./retrieve_data.sh
 ```
-4. Exporter la Base de Données
-
+## Exporter la Base de Données
 Pour exporter la base de données dans un `fichier .sql`, utilisez la commande suivante :
 ```bash
 pg_dump --clean --create --inserts --username=<username> students > students.sql
